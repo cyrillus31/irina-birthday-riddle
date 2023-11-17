@@ -4,3 +4,5 @@ first_riddle_answer = ["стул"]
 
 second_riddle_text = ["Дом из жести, а жильцы в нём — вести."]
 second_riddle_answer = ["почтовый ящик"]
+
+final_answer = "альпиндустрия"
