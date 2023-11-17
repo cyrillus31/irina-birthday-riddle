@@ -8,14 +8,16 @@
         {% if form.answer.errors %}
           {% for error in form.answer.errors %}
             <span> {{ error }} </span>
+            <br>
           {% endfor %}
         {% endif %}
-        {{ form.answer }}
+        {{ form.answer(size=50) }}
       </div>
     </fieldset>
     <div>
       {{ form.submit_button }}
     </div>
   </form>
+  <br><img src="static\palms_together.jpg" alt="Irina's certificate!!!" width="600">
 {% endblock content %}
 
