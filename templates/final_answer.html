@@ -9,8 +9,7 @@
           {% for error in form.answer.errors %}
             <span> {{ error }} </span>
           {% endfor %}
-        {% else %}
-          {{ form.answer }}
+        {{ form.answer }}
         {% endif %}
       </div>
     </fieldset>
