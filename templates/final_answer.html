@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <fieldset>
+      <center><legend>Главное слово из кроссворда</legend></center>
+      <div>
+        {{ form.answer }}
+      </div>
+    </fieldset>
+    <div>
+      {{ form.submit_button }}
+    </div>
+  </form>
+{% endblock content %}
+
