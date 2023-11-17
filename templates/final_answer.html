@@ -8,6 +8,7 @@
         {% if form.answer.errors %}
           {% for error in form.answer.errors %}
             <span> {{ error }} </span>
+            <br>
           {% endfor %}
         {% endif %}
         {{ form.answer(size=50) }}
