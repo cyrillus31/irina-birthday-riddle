@@ -14,9 +14,21 @@
 </head>
 <body>
   <center>
-  <div>
-    {% block content %}{% endblock %}
-  </div>
+    <div class="text-riddle">
+      {% if opening %} 
+        {% for line in opening %}    
+          <b>{{ line }}</b><br>
+        {% endfor %}
+      {% endif %}
+    </div><br>
+  
+    <div>
+      {% block content %}{% endblock %}
+    </div>
+    {% if picture %}
+      <br>
+      <img src="{{ picture }}" alt="picture" width="{{ w }}">
+    {% endif %}
   </center>
 
 </body>
