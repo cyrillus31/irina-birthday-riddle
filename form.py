@@ -10,7 +10,7 @@ def validate_answer(form, field):
     if field.data.lower() == final_answer:
             return
     else:   
-        raise ValidationError("Ответик неправильный! :) Надо обновить страничку")
+        raise ValidationError("Ответик неправильный! :) Попробуй еще разок!")
 
         
 class FinalAnswerForm(FlaskForm):
