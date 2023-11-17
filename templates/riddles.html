@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
-{% for line in message %}
-  <b>{{ line }}</b><br>
-{% endfor %}
+<div class="text-riddle">
+  {% for line in message %}
+    {{ line }}<br>
+  {% endfor %}
+</div>
 {% endblock content %}

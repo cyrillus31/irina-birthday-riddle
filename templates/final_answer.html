@@ -3,7 +3,7 @@
 <form method="POST" action="">
     {{ form.hidden_tag() }}
     <fieldset>
-      <center><legend>Главное слово из кроссворда</legend></center>
+      <center><legend class="text-riddle">Главное слово из кроссворда</legend></center>
       <div>
         {% if form.answer.errors %}
           {% for error in form.answer.errors %}
