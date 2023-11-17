@@ -5,7 +5,13 @@
     <fieldset>
       <center><legend>Главное слово из кроссворда</legend></center>
       <div>
-        {{ form.answer }}
+        {% if form.answer.errors %}
+          {% for error in form.answer.errors %}
+            <span> {{ error }} </span>
+          {% endfor %}
+        {% else %}
+          {{ form.answer }}
+        {% endif %}
       </div>
     </fieldset>
     <div>
